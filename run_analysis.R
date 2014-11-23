@@ -91,5 +91,5 @@ meltdata <- melt(merge_data,id=id_labels,measure.vars=data_labels)
 # Apply mean function to melt dataset using dcast function
 tidy_data <- dcast(meltdata,subject+Activity_Label ~ variable, mean)
 
-write.table(tidy_data,file="./data/tidy_data.txt")
+write.table(tidy_data,file="./data/tidy_data.txt",row.name=FALSE)
 
