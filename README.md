@@ -13,11 +13,12 @@ You should create one R script called run_analysis.R that does the following:
 
 ##  Steps to work this project
 
-1. Download and extract the data from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones into a folder on your local drive.
-   You will have a UCI HAR Dataset folder with all the necessary data. 
+1. Create a data folder in your current working directory.
+2. Download the data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip into a data folder on your local drive.
+3. Extract the downloaded .zip file under ./data folder. You will have a UCI HAR Dataset folder with all the necessary data. 
 2. Place the run_analysis.R file in the parent folder of UCI HAR dataset.
 3. Make sure to set the current working directory to the parent folder using setwd() command.
-4. Run source("run_analysis.R") and it will generate a new file tiny_data.txt in your working directory.
+4. Run source("run_analysis.R") and it will generate a new file tidy_data.txt in your working directory.
 
 ##  Dependencies
 1. It depends on reshpae2 and data.table packages and run_analysis.R will install and load these dependencies.
